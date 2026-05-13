@@ -14,10 +14,6 @@
             <button>Calcular</button>
         </section>
     </header>
-    <map name="calculadora">
-        <area shape="rect" coords="0,0,100,100" href="#" alt="Calculadora">
-
-    </map>
     <main>
         <section class="caracteristicas">
             <img src="" alt="">
@@ -25,47 +21,98 @@
             <h3>planificacion</h3>
             <h3>estilo</h3>
         </section>
-        <section >
-            <h1>donde vivira tu app</h1>
-            <h2>IOS</h2>
-            <h3>(iphone/ipad)</h3>
-            <h2>Android</h2>
-            <h3>(celular/tablet)</h3>
-            <h2>Web</h2>
-            <h3>(Navegador)</h3>
-            <button>siguiente</button>
+        <section class="wizard__paso wizard__paso--plataforma" >
+            <h2>¿Dónde vivirá tu App?</h2>
+            <label class="opcion">
+                 <input type="checkbox" name="plataforma" value="ios">
+                 <span>iOS</span>
+                <small>(iPhone/iPad)</small>
+            </label>
+            <label class="opcion">
+                <input type="checkbox" name="plataforma" value="android">
+                <span>Android</span>
+                <small>(celular/tablet)</small>
+            </label>
+            <label class="opcion">
+                <input type="checkbox" name="plataforma" value="web">
+                <span>Web</span>
+                <small>(Navegador)</small>
+            </label>
+            <div class="wizard__botones">
+                <button class="btn btn--primario">Siguiente</button>
+            </div>
         </section>
-        <section>
-            <h1>Nivel de personalizacion</h1>
-            <h2>Basica</h2>
-            <h3>plantillas predefinidas</h3>
-            <h2>Media</h2>
-            <h3>personalizacion avanzada</h3>
-            <h2>Alta</h2>
-            <h3>personalizacion total</h3>
-            <button>atras</button>
-            <button>siguiente</button>
+        <section class="wizard__paso wizard__paso--diseno">
+            <h2>Nivel de personalizacion</h2>
+            <label class="opcion">
+                <input type="radio" name="diseno" value="basico">
+                <span>Básico</span>
+                <small>Plantilla limpia</small>
+            </label>
+            <label class="opcion">
+                <input type="radio" name="diseno" value="media">
+                <span>Media</span>
+                <small>Personalización moderada</small>
+            </label >
+            <label class="opcion">
+                <input type="radio" name="diseno" value="alta">
+                <span>Alta</span>
+                <small>Personalización total</small>
+            </label>
+            <div class="wizard__botones">
+                <button class="btn btn--secundario">Atrás</button>
+                <button class="btn btn--primario">Siguiente</button>
+            </div>
         </section>
-        <section>
-            <h1>Que hara tu app</h1>
-            <p>inicio de sesion</p>
-            <p>perfiles de usuario</p>
-            <p>mapas</p>
-            <p>mensajeria</p>
-            <p>panel de administracion web</p>
-            <button>atras</button>
-            <button>siguiente</button>
+        <section class="wizard__paso wizard__paso--funciones">
+            <h2>Que hara tu app</h2>
+            <label class="opcion">
+                <input type="checkbox" name="funciones" value="login">
+                <span>Inicio de sesión</span>
+            </label>
+            <label class="opcion">
+                <input type="checkbox" name="funciones" value="perfiles">
+                <span>Perfiles de usuario</span>
+            </label>
+            <label class="opcion">
+                <input type="checkbox" name="funciones" value="mapas">
+                <span>Mapas</span>
+            </label>
+            <label class="opcion">
+                <input type="checkbox" name="funciones" value="mensajeria">
+                <span>Mensajería</span>
+            </label>
+            <label class="opcion">
+                <input type="checkbox" name="funciones" value="panel">
+                <span>Panel de administración web</span>
+            </label>
+            <div class="wizard__botones">
+                <button class="btn btn--secundario">Atrás</button>
+                <button class="btn btn--primario">Siguiente</button>
+            </div>
+                
         </section>
-        <section>
-            <h1>Conexiones externas</h1>
-            <p>requiere base de datos propia</p>
-            <p>se conecta a apis de terceros</p>
-            <p>requiere autenticacion de usuarios</p>
-            <button>atras</button>
-            <button>siguiente</button>
+        <section class="wizard__paso wizard__paso--conexiones">
+            <h2>Conexiones externas</h2>
+            <label class="opcion">
+                <input type="checkbox" name="conexiones" value="base-datos">
+                <span>Requiere base de datos propia</span>
+            </label>
+            <label class="opcion">
+                <input type="checkbox" name="conexiones" value="apis">
+                <span>Se conecta a APIs de terceros</span>
+            </label>
+            <label class="opcion">
+                <input type="checkbox" name="conexiones" value="autenticacion">
+                <span>Requiere autenticación de usuarios</span>
+            </label>
+            <div class="wizard__botones">
+                <button class="btn btn--secundario">Atrás</button>
+                <button class="btn btn--primario">Siguiente</button>
+            </div>
         </section>
-        <section>
-            <h1>Investigacion estimada paa tu proyecto</h1>
+        <section class="wizard__paso wizard__paso--resultado">
+            <h2>Investigacion estimada paa tu proyecto</h2>
             <div>
                 <p>15000-25000</p>
             </div>
@@ -77,12 +124,7 @@
                 <p>Agenda una consulta con espertoos</p>
                 <button>contactanos</button>
             </section>
-
         </section>
-        
-
-
-
     </main>
     
 </body>
