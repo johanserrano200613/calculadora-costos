@@ -1,0 +1,59 @@
+:root {
+    --color-primario: #4A7C59;     
+    --color-secundario: #8B6914;   
+    --color-acento: #C4A35A;      
+    --color-fondo: #F4F1EB;        
+    --color-fondo-2: #E8E0D0;       
+    --color-blanco: #FFFFFF;
+    --color-texto: #2C2C2C;
+    --color-texto-suave: #6B6B6B;
+    --color-borde: #D4C9B0;
+    --radio-borde: 12px;
+    --sombra: 0 2px 12px rgba(0,0,0,0.08);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+}
+
+.header {
+    background-color: var(--color-primario);
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.header img {
+    width: 80px;
+    margin-bottom: 16px;
+}
+
+.header h1 {
+    color: var(--color-blanco);
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+.header h2 {
+    color: var(--color-fondo-2);
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 24px;
+}
+
+.header button {
+    background-color: var(--color-acento);
+    color: var(--color-blanco);
+    border: none;
+    padding: 12px 32px;
+    border-radius: var(--radio-borde);
+    font-size: 16px;
+    cursor: pointer;
+}
