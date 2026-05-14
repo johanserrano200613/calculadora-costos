@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" role="img" aria-label="Configuración de aplicación">
+  <rect x="16" y="16" width="288" height="288" rx="32" fill="#f4f1eb" stroke="#4A7C59" stroke-width="16"/>
+  <path d="M160 96a64 64 0 1 1 0 128 64 64 0 0 1 0-128zm0 24a40 40 0 1 0 0 80 40 40 0 0 0 0-80z" fill="#4A7C59"/>
+  <path d="M160 44v24M160 252v24M44 160h24M252 160h24M76.5 76.5l17 17M226.5 226.5l17 17M76.5 243.5l17-17M226.5 93.5l17-17" stroke="#8B6914" stroke-width="12" stroke-linecap="round"/>
+</svg>
