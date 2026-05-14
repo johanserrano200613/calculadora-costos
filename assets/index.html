@@ -5,47 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora de costos</title>
     <link rel="stylesheet" href="style.css">
+    
 </head>
 <body>
     <header class="header">
-        <section>
-            <img src="" alt="">
-            <h1>Calculadora de costos</h1>
-            <h2>estima la inversion de tu primera gran idea</h2>
-            <button>Calcular</button>
-        </section>
-    </header>
+        <span>🚀</span>
+        <h1>Calculadora de costos</h1>
+        <h2>estima la inversion de tu primera gran idea</h2>
+        <a href="#plataforma" class="btn btn--primario">Calcular</a>
+    <section class="caracteristicas">
+        <div class="caracteristica__item">
+            <span>💡</span>
+            <h3>Claridad</h3>
+        </div>
+        <div class="caracteristica__item">
+            <span>📋</span>
+            <h3>Planificación</h3>
+        </div>
+        <div class="caracteristica__item">
+            <span>📈</span>
+            <h3>Éxito</h3>
+        </div>
+    </section>
+</header>
     <main>
-        <section class="caracteristicas">
-            <img src="" alt="">
-            <h3>claridad</h3>
-            <h3>planificacion</h3>
-            <h3>estilo</h3>
-        </section>
-        <section class="wizard__paso wizard__paso--plataforma" >
+        <section id="plataforma" class="contenedor">
             <h2>¿Dónde vivirá tu App?</h2>
-            <label class="opcion">
-                 <input type="checkbox" name="plataforma" value="ios">
-                 <span>iOS</span>
-                <small>(iPhone/iPad)</small>
-            </label>
-            <label class="opcion">
-                <input type="checkbox" name="plataforma" value="android">
-                <span>Android</span>
-                <small>(celular/tablet)</small>
-            </label>
-            <label class="opcion">
-                <input type="checkbox" name="plataforma" value="web">
-                <span>Web</span>
-                <small>(Navegador)</small>
-            </label>
-            <div class="wizard__botones">
-                <button class="btn btn--primario">Siguiente</button>
+            <div class="opciones1">
+                <div class="card">
+                    <span>iOS</span>
+                    <small>(iPhone/iPad)</small>
+                 </div>
+                <div class="card">
+                    <span>Android</span>
+                    <small>(celular/tablet)</small>
+                </div>
+                <div class="card">
+                    <span>Web</span>
+                    <small>(Navegador)</small>
+            </div>
+            </div>
+                <div class="wizard__botones">
+                <a href="#Perzonalizacion" class="btn btn--primario">siguienete</a>
             </div>
         </section>
-        <section class="wizard__paso wizard__paso--diseno">
+        <section id="Perzonalizacion" class="contenedor">
             <h2>Nivel de personalizacion</h2>
-            <label class="opcion">
+            <div class="opciones2">
+                <label class="opcion">
                 <input type="radio" name="diseno" value="basico">
                 <span>Básico</span>
                 <small>Plantilla limpia</small>
@@ -60,73 +67,86 @@
                 <span>Alta</span>
                 <small>Personalización total</small>
             </label>
+            </div>
             <div class="wizard__botones">
-                <button class="btn btn--secundario">Atrás</button>
-                <button class="btn btn--primario">Siguiente</button>
+                <a href="#plataforma" class="btn btn--primario">Atras</a>
+                <a href="#qata" class="btn btn--primario">siguienete</a>
             </div>
         </section>
-        <section class="wizard__paso wizard__paso--funciones">
+        <section id="qata" class="contenedor">
             <h2>Que hara tu app</h2>
-            <label class="opcion">
-                <input type="checkbox" name="funciones" value="login">
-                <span>Inicio de sesión</span>
-            </label>
-            <label class="opcion">
-                <input type="checkbox" name="funciones" value="perfiles">
-                <span>Perfiles de usuario</span>
-            </label>
-            <label class="opcion">
-                <input type="checkbox" name="funciones" value="mapas">
-                <span>Mapas</span>
-            </label>
-            <label class="opcion">
-                <input type="checkbox" name="funciones" value="mensajeria">
-                <span>Mensajería</span>
-            </label>
-            <label class="opcion">
-                <input type="checkbox" name="funciones" value="panel">
-                <span>Panel de administración web</span>
-            </label>
+            
+            <div class="opciones3">
+                <div class="opciones3__lista">
+                    <label class="opcion">
+                        <input type="checkbox" name="funciones" value="login">
+                        <span>Inicio de sesión</span>
+                    </label>
+                    <label class="opcion">
+                        <input type="checkbox" name="funciones" value="perfiles">
+                        <span>Perfiles de usuario</span>
+                    </label>
+                    <label class="opcion">
+                        <input type="checkbox" name="funciones" value="mapas">
+                        <span>Mapas</span>
+                    </label>
+                    <label class="opcion">
+                        <input type="checkbox" name="funciones" value="mensajeria">
+                        <span>Mensajería</span>
+                    </label>
+                    <label class="opcion">
+                        <input type="checkbox" name="funciones" value="panel">
+                        <span>Panel de administración web</span>
+                    </label>
+                </div>
+            
+            </div>
+            
             <div class="wizard__botones">
-                <button class="btn btn--secundario">Atrás</button>
-                <button class="btn btn--primario">Siguiente</button>
+                <a href="#Perzonalizacion" class="btn btn--primario">Atras</a>
+                <a href="#conexiones" class="btn btn--primario">Siguiente</a>
             </div>
                 
         </section>
-        <section class="wizard__paso wizard__paso--conexiones">
+        <section id="conexiones" class="contenedor">
             <h2>Conexiones externas</h2>
-            <label class="opcion">
+            <div class="opciones4">
+                <label class="seleccion">
                 <input type="checkbox" name="conexiones" value="base-datos">
                 <span>Requiere base de datos propia</span>
             </label>
-            <label class="opcion">
+            <label class="seleccion">
                 <input type="checkbox" name="conexiones" value="apis">
                 <span>Se conecta a APIs de terceros</span>
             </label>
-            <label class="opcion">
+            <label class="seleccion">
                 <input type="checkbox" name="conexiones" value="autenticacion">
                 <span>Requiere autenticación de usuarios</span>
             </label>
+            </div>
             <div class="wizard__botones">
-                <button class="btn btn--secundario">Atrás</button>
-                <button class="btn btn--primario">Siguiente</button>
+                <a href="#qata" class="btn btn--primario">Atrás</a>
+                <a href="#resultado" class="btn btn--primario">Siguiente</a>
             </div>
         </section>
-        <section class="wizard__paso wizard__paso--resultado">
-            <h2>Investigacion estimada paa tu proyecto</h2>
+        <section id="resultado" class="contenedor">
+            <h2>Inversión estimada para tu proyecto</h2>
             <div>
-                <p>15000-25000</p>
+    <div class="resultado__precio">
+        <p>$15,000 - $25,000 USD</p>
+    </div>
+    <p><strong>Plataformas:</strong> iOS + Android</p>
+    <p><strong>Diseño:</strong> Personalizado</p>
+    <p><strong>Funciones:</strong> 4 seleccionadas</p>
+    <div class="resultado__cta">
+        <p>Da el siguiente paso:</p>
+        <p>Agenda una consulta con expertos</p>
+        <a href="#contacto" class="contacto">Contáctanos</a>
+    </div>
             </div>
-            <p>Platafopormas: IOS  Androis</p>
-            <p>Diseño: Personalizacion</p>
-            <P>Funciones: 4 Selecciones</P>
-            <section>
-                <p>Da el siguiente paso:</p>
-                <p>Agenda una consulta con espertoos</p>
-                <button>contactanos</button>
-            </section>
-        </section>
-    </main>
     
+</section>
+    </main>
+
 </body>
 </html>
