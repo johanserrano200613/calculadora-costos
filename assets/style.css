@@ -101,8 +101,7 @@ body {
     text-align: center;
 }
 
-/* === OPCIONES EN FILA === */
-.opciones1, .opciones2, .opciones4{
+.opciones1, .opciones2 {
     display: flex;
     justify-content: center;
     gap: 16px;
@@ -116,21 +115,21 @@ body {
     gap: 24px;
     flex-wrap: wrap;
     margin-bottom: 24px;
-    margin-left: 0;
 }
 .opciones3__lista, .opciones4 .opcion {
     display: flex;
     flex-direction: column;
     gap: 12px;
     flex: 1;
-    min-width: 280px;
+    min-width: 900px;
 }
+
 
 .card {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 24px;
+    padding: 150px;
     border: 2px solid var(--color-borde);
     border-radius: var(--radio-borde);
     background-color: var(--color-blanco);
@@ -171,7 +170,7 @@ body {
     color: var(--color-texto-suave);
 }
 
-.opciones3 .opcion, .opciones4 .seleccion {
+.card2  {
     display: flex;
     align-items: center;
     gap: 12px;
@@ -180,14 +179,15 @@ body {
     border-radius: var(--radio-borde);
     background-color: var(--color-blanco);
     width: 100%;
-    max-width: 720px;
-    min-height: 100px;
+    margin-bottom: -10px;
+    max-width: 1500px;
+    min-height: 80px;
     cursor: pointer;
 }
 
 
 .opciones4 .seleccion span {
-    font-size: 30px;
+    font-size: 20px;
     color: var(--color-texto);
 }
 
@@ -223,7 +223,6 @@ body {
     border: 2px solid var(--color-primario);
 }
 .contacto{
-    background-color: var(--color-primario);
     color: var(--color-texto);
     border: 2px solid var(--color-primario);
     padding: 12px 28px;
@@ -232,36 +231,38 @@ body {
     cursor: pointer;
     text-decoration: none;
     display: inline-block;
-    margin: 0 auto;
+    margin: 28px auto 20px;
 }
 .resultado__precio {
     border: #c4b493 solid 5px;
     background-color: var(--color-borde);
     border-radius: var(--radio-borde);
-    font-size: 48px;
+    font-size: 10px;
     color: var(--color-texto);
-    margin-bottom: 16px;
+    margin-bottom: 20px;
     width: 100%;
     max-width: 700px;
     text-align: center;
+    transform: translateX(250px);
 }
 p {
     font-size: 24px;
     color: var(--color-texto-suave);
     max-width: 800px;
-    margin: 0 auto 16px;
+    margin: 0 auto 0px;
 }
 
 .resultado__cta {
     background-color: var(--color-borde);
     color: var(--color-texto);
     font-size: 24px;
-    padding: 20px 28px;
+    padding: 25px 400px;
     width: 100%;
-    max-width: 820px;
+    max-width: 2000px;
+    max-height: 130px;
     border: none;
     border-radius: var(--radio-borde);
-    cursor: pointer;
+
     text-decoration: none;
     display: flex;
     flex-direction: column;
@@ -269,3 +270,14 @@ p {
     margin: 0 auto;
     align-items: flex-start;
 }
+.resultado__descripcion {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 15px 180px;
+    width: 100%;
+    max-width: 260px;
+    gap: 200px;
+}  
+
+

@@ -52,21 +52,18 @@
         <section id="Perzonalizacion" class="contenedor">
             <h2>Nivel de personalizacion</h2>
             <div class="opciones2">
-                <label class="opcion">
-                <input type="radio" name="diseno" value="basico">
+                <div class="card">
                 <span>Básico</span>
                 <small>Plantilla limpia</small>
-            </label>
-            <label class="opcion">
-                <input type="radio" name="diseno" value="media">
+            </div>
+            <div class="card">
                 <span>Media</span>
                 <small>Personalización moderada</small>
-            </label >
-            <label class="opcion">
-                <input type="radio" name="diseno" value="alta">
+            </div>
+            <div class="card">
                 <span>Alta</span>
                 <small>Personalización total</small>
-            </label>
+            </div>
             </div>
             <div class="wizard__botones">
                 <a href="#plataforma" class="btn btn--primario">Atras</a>
@@ -78,26 +75,21 @@
             
             <div class="opciones3">
                 <div class="opciones3__lista">
-                    <label class="opcion">
-                        <input type="checkbox" name="funciones" value="login">
+                    <div class="card2">
                         <span>Inicio de sesión</span>
-                    </label>
-                    <label class="opcion">
-                        <input type="checkbox" name="funciones" value="perfiles">
+                    </div>
+                    <div class="card2 ">
                         <span>Perfiles de usuario</span>
-                    </label>
-                    <label class="opcion">
-                        <input type="checkbox" name="funciones" value="mapas">
+                    </div>
+                    <div class="card2 ">
                         <span>Mapas</span>
-                    </label>
-                    <label class="opcion">
-                        <input type="checkbox" name="funciones" value="mensajeria">
+                    </div>
+                    <div class="card2 ">
                         <span>Mensajería</span>
-                    </label>
-                    <label class="opcion">
-                        <input type="checkbox" name="funciones" value="panel">
+                    </div>
+                    <div class="card2">
                         <span>Panel de administración web</span>
-                    </label>
+                    </div>
                 </div>
             
             </div>
@@ -111,18 +103,15 @@
         <section id="conexiones" class="contenedor">
             <h2>Conexiones externas</h2>
             <div class="opciones4">
-                <label class="seleccion">
-                <input type="checkbox" name="conexiones" value="base-datos">
+                <div class="card2 ">
                 <span>Requiere base de datos propia</span>
-            </label>
-            <label class="seleccion">
-                <input type="checkbox" name="conexiones" value="apis">
+            </div>
+            <div class="card2 ">
                 <span>Se conecta a APIs de terceros</span>
-            </label>
-            <label class="seleccion">
-                <input type="checkbox" name="conexiones" value="autenticacion">
+            </div>
+            <div class="card2 ">
                 <span>Requiere autenticación de usuarios</span>
-            </label>
+            </div>
             </div>
             <div class="wizard__botones">
                 <a href="#qata" class="btn btn--primario">Atrás</a>
@@ -135,9 +124,11 @@
     <div class="resultado__precio">
         <p>$15,000 - $25,000 USD</p>
     </div>
-    <p><strong>Plataformas:</strong> iOS + Android</p>
-    <p><strong>Diseño:</strong> Personalizado</p>
-    <p><strong>Funciones:</strong> 4 seleccionadas</p>
+    <div class="resultado__descripcion">
+        <p><strong>Plataformas:</strong> iOS + Android</p>
+        <p><strong>Diseño:</strong> Personalizado</p>
+        <p><strong>Funciones:</strong> 4 seleccionadas</p>
+    </div>
     <div class="resultado__cta">
         <p>Da el siguiente paso:</p>
         <p>Agenda una consulta con expertos</p>
