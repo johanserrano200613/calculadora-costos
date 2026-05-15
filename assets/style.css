@@ -280,4 +280,47 @@ p {
     gap: 200px;
 }  
 
+.opciones1 .card:nth-child(1) {
+    background-image: url('img/ios.png');
+    background-size: 150px;
+    background-repeat: no-repeat;
+    background-position: center 30px;
+    padding-top: 120px;
+}
 
+.opciones1 .card:nth-child(2) {
+    background-image: url('img/android.png');
+    background-size: 80px;
+    background-repeat: no-repeat;
+    background-position: center 30px;
+    padding-top: 120px;
+}
+
+.opciones1 .card:nth-child(3) {
+    background-image: url('img/web.png');
+    background-size: 80px;
+    background-repeat: no-repeat;
+    background-position: center 30px;
+    padding-top: 120px;
+}
+
+.opciones2 .card:nth-child(1) {
+    background-image: url('img/wireframebasico.png');
+    background-size: 100px;
+    background-repeat: no-repeat;
+    background-position: center 30px;
+}
+
+.opciones2 .card:nth-child(2) {
+    background-image: url('img/wireframemedia.png');
+    background-size: 150px;
+    background-repeat: no-repeat;
+    background-position: center 5px;
+}
+
+.opciones2 .card:nth-child(3) {
+    background-image: url('img/wireframealta.png');
+    background-size: 150px;
+    background-repeat: no-repeat;
+    background-position: center 10px;
+}
