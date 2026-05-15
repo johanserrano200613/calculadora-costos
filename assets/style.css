@@ -1,6 +1,5 @@
 :root {
     --color-primario: #4A7C59;     
-    --color-secundario: #8B6914;   
     --color-acento: #C4A35A;      
     --color-fondo: #F4F1EB;        
     --color-fondo-2: #E8E0D0;       
@@ -9,7 +8,6 @@
     --color-texto-suave: #6B6B6B;
     --color-borde: #e7e1d3;
     --radio-borde: 12px;
-    --sombra: 0 2px 12px rgba(0,0,0,0.08);
 }
 
 * {
@@ -25,14 +23,13 @@ body {
 }
 .header {
     background-color: var(--color-primario);
-    width: 100%;
-    min-height: 100vh;
+    max-width: 100%;
+    min-height: 120vh;
+    position: relative;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
-    
-
+    align-items: center;
 }
 .header span {
     font-size: 80px;
@@ -62,9 +59,26 @@ body {
     transform: translateX(-50%);
     display: flex;
     gap: 48px;
-    background-color: var(--color-fondo-2);
     width: 100%;
     padding: 35px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.titulocal{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    transform: translateY(-70px);
+}
+.imgcal{
+    display: flex;
+    align-items: center;
+    align-content: end;
+    background-color: var(--color-fondo-2);
+    width: 1350px;
+    height: 200px;
+    transform: translateY(-80px);
 }
 .caracteristica__item {
     display: flex;
@@ -105,7 +119,7 @@ body {
     display: flex;
     justify-content: center;
     gap: 16px;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     margin-bottom: 24px;
 }
 .opciones3, .opciones4 {
@@ -116,27 +130,18 @@ body {
     flex-wrap: wrap;
     margin-bottom: 24px;
 }
-.opciones3__lista, .opciones4 .opcion {
+.opciones3__lista {
     display: flex;
     flex-direction: column;
     gap: 12px;
     flex: 1;
     min-width: 900px;
+    margin-top: -20px;
+}
+.contenedor h2 {
+    margin-top: -35px;
 }
 
-
-.card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 150px;
-    border: 2px solid var(--color-borde);
-    border-radius: var(--radio-borde);
-    background-color: var(--color-blanco);
-    width: 100%;
-    max-width: 260px;
-    cursor: pointer;
-}
 
 .card span {
     font-size: 50px;
@@ -148,28 +153,6 @@ body {
     font-size: 20px;
     color: var(--color-texto-suave);
 }
-.opciones1 .opcion, .opciones2 .opcion {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 24px;
-    border: 2px solid var(--color-borde);
-    border-radius: var(--radio-borde);
-    background-color: var(--color-blanco);
-    width: 100%;
-    max-width: 260px;
-    cursor: pointer;
-}
-.opciones1 .opcion span, .opciones2 .opcion span {
-    font-size: 50px;
-    font-weight: bold;
-    color: var(--color-texto);
-}
-.opciones1 .opcion small, .opciones2 .opcion small {
-    font-size: 30px;
-    color: var(--color-texto-suave);
-}
-
 .card2  {
     display: flex;
     align-items: center;
@@ -183,12 +166,6 @@ body {
     max-width: 1500px;
     min-height: 80px;
     cursor: pointer;
-}
-
-
-.opciones4 .seleccion span {
-    font-size: 20px;
-    color: var(--color-texto);
 }
 
 
@@ -281,53 +258,37 @@ p {
     gap: 200px;
 }  
 
-.opciones1 .card:nth-child(1) {
-    background-image: url('img/ios.png');
-    background-size: 150px;
-    background-repeat: no-repeat;
-    background-position: center 30px;
-    padding-top: 120px;
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 32px;
+    border: 2px solid var(--color-borde);
+    border-radius: var(--radio-borde);
+    background-color: var(--color-blanco);
+    width: 100%;
+    max-width: 260px;
+    cursor: pointer;
 }
 
-.opciones1 .card:nth-child(2) {
-    background-image: url('img/android.png');
-    background-size: 80px;
-    background-repeat: no-repeat;
-    background-position: center 30px;
-    padding-top: 120px;
+.card__img {
+    width: 120px;
+    max-height: 120px;
+    object-fit: contain;
+    margin-bottom: 24px;
 }
 
-.opciones1 .card:nth-child(3) {
-    background-image: url('img/web.png');
-    background-size: 80px;
-    background-repeat: no-repeat;
-    background-position: center 30px;
-    padding-top: 120px;
+.opciones1 .card:first-child .card__img {
+    width: 300px;
 }
 
-.opciones2 .card:nth-child(1) {
-    background-image: url('img/wireframebasico.png');
-    background-size: 100px;
-    background-repeat: no-repeat;
-    background-position: center 30px;
-}
-
-.opciones2 .card:nth-child(2) {
-    background-image: url('img/wireframemedia.png');
-    background-size: 150px;
-    background-repeat: no-repeat;
-    background-position: center 5px;
-}
-
-.opciones2 .card:nth-child(3) {
-    background-image: url('img/wireframealta.png');
-    background-size: 150px;
-    background-repeat: no-repeat;
-    background-position: center 10px;
+.opciones1 .card, .opciones2 .card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
 }
 
 .opciones1 .card {
-    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    min-height: 300px;
+    min-width: 230px;
 }
 
 .opciones1 .card:hover {
