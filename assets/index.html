@@ -3,75 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora de costos</title>
+    <title>Calculadora de Costos</title>
     <link rel="stylesheet" href="style.css">
-    
+    <link rel="stylesheet" href="responsive.css">
+
 </head>
 <body>
-    <header class="header">
-        <span>🚀</span>
-        <h1>Calculadora de costos</h1>
-        <h2>estima la inversion de tu primera gran idea</h2>
-        <a href="#plataforma" class="btn btn--primario">Calcular</a>
-    <section class="caracteristicas">
-        <div class="caracteristica__item">
-            <span>💡</span>
-            <h3>Claridad</h3>
-        </div>
-        <div class="caracteristica__item">
-            <span>📋</span>
-            <h3>Planificación</h3>
-        </div>
-        <div class="caracteristica__item">
-            <span>📈</span>
-            <h3>Éxito</h3>
-        </div>
-    </section>
-</header>
+    
     <main>
+    <header class="header">
+        <section class="caracteristicas">
+        <div class="titulocal">
+            <span>🚀</span>
+            <h1>Calculadora de Costos</h1>
+            <h2>Estima la inversión de tu primera gran idea</h2>
+            <a href="#plataforma" class="btn btn--primario">Calcular</a>
+        </div>
+            <div class="imgcal">
+                <div class="caracteristica__item">
+                <span>💡</span>
+                <h3>Claridad</h3>
+            </div>
+            <div class="caracteristica__item">
+                <span>📋</span>
+                <h3>Planificación</h3>
+            </div>
+            <div class="caracteristica__item">
+                <span>📈</span>
+                <h3>Éxito</h3>
+            </div>
+            </div>
+        </section>
+    </header>
         <section id="plataforma" class="contenedor">
             <h2>¿Dónde vivirá tu App?</h2>
             <div class="opciones1">
                 <div class="card">
+                    <img src="img/ios.png" alt="iOS" class="card__img">
                     <span>iOS</span>
                     <small>(iPhone/iPad)</small>
                  </div>
                 <div class="card">
+                    <img src="img/android.png" alt="Android" class="card__img">
                     <span>Android</span>
-                    <small>(celular/tablet)</small>
+                    <small>(Celular/Tablet)</small>
                 </div>
                 <div class="card">
+                    <img src="img/web.png" alt="Web" class="card__img">
                     <span>Web</span>
                     <small>(Navegador)</small>
-            </div>
+                </div>
             </div>
                 <div class="wizard__botones">
-                <a href="#Perzonalizacion" class="btn btn--primario">siguienete</a>
+                <a href="#Perzonalizacion" class="btn btn--primario">Siguiente</a>
             </div>
         </section>
         <section id="Perzonalizacion" class="contenedor">
-            <h2>Nivel de personalizacion</h2>
+            <h2>Nivel de Personalización</h2>
             <div class="opciones2">
                 <div class="card">
-                <span>Básico</span>
-                <small>Plantilla limpia</small>
-            </div>
+                    <img src="img/wireframebasic.png" alt="Básico" class="card__img">
+                    <span>Básico</span>
+                    <small>Plantilla limpia</small>
+                </div>
             <div class="card">
+                <img src="img/wireframemedia.png" alt="Media" class="card__img">
                 <span>Media</span>
                 <small>Personalización moderada</small>
             </div>
             <div class="card">
+                <img src="img/wireframealta.png" alt="Alta" class="card__img">
                 <span>Alta</span>
                 <small>Personalización total</small>
             </div>
             </div>
             <div class="wizard__botones">
-                <a href="#plataforma" class="btn btn--primario">Atras</a>
-                <a href="#qata" class="btn btn--primario">siguienete</a>
+                <a href="#plataforma" class="btn btn--primario">Atrás</a>
+                <a href="#qata" class="btn btn--primario">Siguiente</a>
             </div>
         </section>
         <section id="qata" class="contenedor">
-            <h2>Que hara tu app</h2>
+            <h2>¿Que hará tu app?</h2>
             
             <div class="opciones3">
                 <div class="opciones3__lista">
@@ -95,13 +107,13 @@
             </div>
             
             <div class="wizard__botones">
-                <a href="#Perzonalizacion" class="btn btn--primario">Atras</a>
+                <a href="#Perzonalizacion" class="btn btn--primario">Atrás</a>
                 <a href="#conexiones" class="btn btn--primario">Siguiente</a>
             </div>
                 
         </section>
         <section id="conexiones" class="contenedor">
-            <h2>Conexiones externas</h2>
+            <h2>Conexiones Externas</h2>
             <div class="opciones4">
                 <div class="card2 ">
                 <span>Requiere base de datos propia</span>
